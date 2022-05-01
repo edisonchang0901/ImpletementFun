@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ImpletementFun/1.0.0": {
+        "dependencies": {
+          "Function.Core": "1.0.0"
+        },
+        "runtime": {
+          "ImpletementFun.dll": {}
+        }
+      },
+      "Function.Core/1.0.0": {
+        "runtime": {
+          "Function.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ImpletementFun/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Function.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

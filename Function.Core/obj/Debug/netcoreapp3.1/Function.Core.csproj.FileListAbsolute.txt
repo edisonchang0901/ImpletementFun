@@ -1,0 +1,9 @@
+C:\Users\forma\source\repos\ImpletementFun\Function.Core\obj\Debug\netcoreapp3.1\Function.Core.csprojAssemblyReference.cache
+C:\Users\forma\source\repos\ImpletementFun\Function.Core\obj\Debug\netcoreapp3.1\Function.Core.AssemblyInfoInputs.cache
+C:\Users\forma\source\repos\ImpletementFun\Function.Core\obj\Debug\netcoreapp3.1\Function.Core.AssemblyInfo.cs
+C:\Users\forma\source\repos\ImpletementFun\Function.Core\obj\Debug\netcoreapp3.1\Function.Core.csproj.CoreCompileInputs.cache
+C:\Users\forma\source\repos\ImpletementFun\Function.Core\bin\Debug\netcoreapp3.1\Function.Core.deps.json
+C:\Users\forma\source\repos\ImpletementFun\Function.Core\bin\Debug\netcoreapp3.1\Function.Core.dll
+C:\Users\forma\source\repos\ImpletementFun\Function.Core\bin\Debug\netcoreapp3.1\Function.Core.pdb
+C:\Users\forma\source\repos\ImpletementFun\Function.Core\obj\Debug\netcoreapp3.1\Function.Core.dll
+C:\Users\forma\source\repos\ImpletementFun\Function.Core\obj\Debug\netcoreapp3.1\Function.Core.pdb

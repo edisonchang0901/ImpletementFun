@@ -1,0 +1,16 @@
+C:\Users\forma\source\repos\ImpletementFun\ImpletementFun\bin\Debug\netcoreapp3.1\ImpletementFun.exe
+C:\Users\forma\source\repos\ImpletementFun\ImpletementFun\bin\Debug\netcoreapp3.1\ImpletementFun.deps.json
+C:\Users\forma\source\repos\ImpletementFun\ImpletementFun\bin\Debug\netcoreapp3.1\ImpletementFun.runtimeconfig.json
+C:\Users\forma\source\repos\ImpletementFun\ImpletementFun\bin\Debug\netcoreapp3.1\ImpletementFun.runtimeconfig.dev.json
+C:\Users\forma\source\repos\ImpletementFun\ImpletementFun\bin\Debug\netcoreapp3.1\ImpletementFun.dll
+C:\Users\forma\source\repos\ImpletementFun\ImpletementFun\bin\Debug\netcoreapp3.1\ImpletementFun.pdb
+C:\Users\forma\source\repos\ImpletementFun\ImpletementFun\bin\Debug\netcoreapp3.1\Function.Core.dll
+C:\Users\forma\source\repos\ImpletementFun\ImpletementFun\bin\Debug\netcoreapp3.1\Function.Core.pdb
+C:\Users\forma\source\repos\ImpletementFun\ImpletementFun\obj\Debug\netcoreapp3.1\ImpletementFun.csprojAssemblyReference.cache
+C:\Users\forma\source\repos\ImpletementFun\ImpletementFun\obj\Debug\netcoreapp3.1\ImpletementFun.AssemblyInfoInputs.cache
+C:\Users\forma\source\repos\ImpletementFun\ImpletementFun\obj\Debug\netcoreapp3.1\ImpletementFun.AssemblyInfo.cs
+C:\Users\forma\source\repos\ImpletementFun\ImpletementFun\obj\Debug\netcoreapp3.1\ImpletementFun.csproj.CoreCompileInputs.cache
+C:\Users\forma\source\repos\ImpletementFun\ImpletementFun\obj\Debug\netcoreapp3.1\ImpletementFun.csproj.CopyComplete
+C:\Users\forma\source\repos\ImpletementFun\ImpletementFun\obj\Debug\netcoreapp3.1\ImpletementFun.dll
+C:\Users\forma\source\repos\ImpletementFun\ImpletementFun\obj\Debug\netcoreapp3.1\ImpletementFun.pdb
+C:\Users\forma\source\repos\ImpletementFun\ImpletementFun\obj\Debug\netcoreapp3.1\ImpletementFun.genruntimeconfig.cache

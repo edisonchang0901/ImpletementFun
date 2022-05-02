@@ -26,12 +26,24 @@ namespace Function.Core.model
         }
         public string CheckProductExpireTime(string productNumber, DateTime systemDateTime)
         {
-            var match = CreatMatch(productNumber);
+            var match = CreatProductMatch(productNumber);
             CheckProductName(match);
             DateTime productDateTime;
             CheckMatchProductDateTime(match, out productDateTime);        
             return GetProductExpireMessage(productDateTime, systemDateTime);
         }
+
+        public void DeleteFileBySystemTime(List<string> fileList, int dayConfig) 
+        {
+            foreach (string file in fileList) 
+            {
+
+
+
+
+            }
+        }
+        
 
         public string GetEnumDescription(Enum value)
         {
@@ -49,11 +61,18 @@ namespace Function.Core.model
                 return value.ToString();
         }
 
-        private Match CreatMatch(string productNumber)
+        private Match CreatProductMatch(string productNumber)
         {
             string productNamePattern = @"(?=.{15}$)([A-Z]{5})([\d]{10})";
             Regex regexProductNameChecker = new Regex(productNamePattern, RegexOptions.Compiled);
             return regexProductNameChecker.Match(productNumber);
+        }
+
+        private Match CreateFileMatch(string fileName) 
+        {
+            string fileNamePattern = @"IF([a-z]{6})([\d]{8})\.([1-7]{1})";
+            Regex regexFileNameChecker = new Regex(fileNamePattern, RegexOptions.Compiled);
+            return regexFileNameChecker.Match(fileName);
         }
 
         private char GetLetter()

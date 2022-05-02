@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImpletementFun", "Impleteme
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Function.Core", "Function.Core\Function.Core.csproj", "{BF6E1B60-4D6E-4C39-96A3-209C6B74953F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Function.Test", "Function.Test\Function.Test.csproj", "{329CB650-FDDE-4A94-BC31-93990EC492EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BF6E1B60-4D6E-4C39-96A3-209C6B74953F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF6E1B60-4D6E-4C39-96A3-209C6B74953F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF6E1B60-4D6E-4C39-96A3-209C6B74953F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{329CB650-FDDE-4A94-BC31-93990EC492EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{329CB650-FDDE-4A94-BC31-93990EC492EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{329CB650-FDDE-4A94-BC31-93990EC492EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{329CB650-FDDE-4A94-BC31-93990EC492EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

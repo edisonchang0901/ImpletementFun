@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Function.Core.model;
 
 namespace ImpletementFun
@@ -8,6 +9,7 @@ namespace ImpletementFun
         static void Main(string[] args)
         {
             ProductModel pm = new ProductModel();
+            List<string> fileList = new List<string>();
             try
             {    
                 var result = pm.CheckProductExpireTime("ABCDE2022021522", new DateTime(2022,  02, 15, 21, 56, 00));

@@ -29,22 +29,19 @@ namespace Function.Core.model
             var match = CreatProductMatch(productNumber);
             CheckProductName(match);
             DateTime productDateTime;
-            CheckMatchProductDateTime(match, out productDateTime);        
+            CheckMatchDateTime(match, "yyyyMMddHH", out productDateTime);        
             return GetProductExpireMessage(productDateTime, systemDateTime);
         }
-
-        public void DeleteFileBySystemTime(List<string> fileList, int dayConfig) 
+        public bool DeleteFileBySystemTime(string fileName, int SysDayConfig, DateTime systemDateTime) 
         {
-            foreach (string file in fileList) 
-            {
-
-
-
-
-            }
+            DateTime systemDateTimeAddDay = systemDateTime.AddDays(SysDayConfig);
+            var match = CreateFileMatch(fileName);
+            CheckFileName(match);
+            DateTime fileDateTime;
+            CheckMatchDateTime(match, "yyyyMMdd", out fileDateTime);
+            return DeleteFile(fileDateTime, systemDateTimeAddDay, fileName);
         }
         
-
         public string GetEnumDescription(Enum value)
         {
             FieldInfo fi = value.GetType().GetField(value.ToString());
@@ -90,9 +87,17 @@ namespace Function.Core.model
             }
         }
 
-        private void CheckMatchProductDateTime(Match match, out DateTime productDateTime)
+        private void CheckFileName(Match match) 
         {
-            if (DateTime.TryParseExact(match.Groups[2].Value, "yyyyMMddHH", null, System.Globalization.DateTimeStyles.None, out productDateTime).Equals(false))
+            if (match.Success.Equals(false)) 
+            {
+                throw new ArgumentException("file format error");
+            }
+        }
+
+        private void CheckMatchDateTime(Match match, string formatString ,out DateTime productDateTime)
+        {
+            if (DateTime.TryParseExact(match.Groups[2].Value, formatString, null, System.Globalization.DateTimeStyles.None, out productDateTime).Equals(false))
             {
                 throw new ArgumentException(GetEnumDescription(ProductExpireStatus.None));
             }
@@ -129,25 +134,35 @@ namespace Function.Core.model
             return string.Empty;
         }
 
+        private bool DeleteFile(DateTime fileDateTime, DateTime systemDateTime, string fileName) 
+        {
+            if (fileDateTime < systemDateTime) 
+            {
+                // Delete File
+                return true;
+            }
+            return false;
+        }
+
 
         public enum ProductExpireStatus
         {
             /// <summary>
             /// 商品條碼格式不符
             /// </summary>
-            [Description("Product barcode format error")]
+            [Description("商品條碼格式不符")]
             None = 0,
             /// <summary>
             /// 商品已過期
             /// </summary>
-            //[Description("商品已過期")]
-            [Description("expired")]
+            [Description("商品已過期")]
+            //[Description("expired")]
             ProductExpired = 1,
             /// <summary>
             /// 商品即將到期
             /// </summary>
-            //[Description("商品即將到期")]
-            [Description("expiring")]
+            [Description("商品即將到期")]
+            //[Description("expiring")]
             ProductExpiring = 2,
         }
     }
